@@ -353,7 +353,7 @@ export default function App() {
       <footer className="print:hidden bg-slate-900 text-slate-400 py-10 mt-16 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
           <p className="text-xs font-bold text-slate-300">
-            Lexi's Travel Guidebook Applet
+            Lexi Travel Guide
           </p>
         </div>
       </footer>
