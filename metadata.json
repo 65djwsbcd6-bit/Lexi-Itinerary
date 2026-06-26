@@ -1,0 +1,6 @@
+{
+  "name": "Lexi's Travel Guide",
+  "description": "An interactive, professionally designed travel itinerary and guide for Hong Kong & Macau, featuring detailed flight info, step-by-step transportation instructions, banking details, and an itinerary MTR map.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
