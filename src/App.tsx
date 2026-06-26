@@ -20,7 +20,7 @@ import MtrMap from "./components/MtrMap";
 import BankingView from "./components/BankingView";
 import { itinerary, flights, bankingInfo } from "./data/travelData";
 
-type TabType = "itinerary" | "flights" | "map" | "banking" | "printView";
+type TabType = "itinerary" | "flights" | "map" | "banking" | "pdf";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>("itinerary");
@@ -156,7 +156,7 @@ export default function App() {
               <div className="space-y-1 md:space-y-2">
                 <div className="inline-flex items-center gap-1.5 bg-rose-500/20 border border-rose-500/30 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-rose-300">
                   <Sparkles className="w-3.5 h-3.5 text-rose-400 animate-spin-slow" />
-                  Smart Travel Guidebook
+                  24th Birthday
                 </div>
                 <h1 id="main-title" className="text-3xl md:text-5xl font-black tracking-tight text-white leading-none">
                   Lexi's Itinerary
@@ -208,66 +208,66 @@ export default function App() {
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
-            {/* Sidebar / Topbar Navigation Column (3 cols) */}
-            <nav className="lg:col-span-3 flex flex-row lg:flex-col gap-2 bg-white p-2.5 rounded-3xl border border-slate-100 shadow-sm overflow-x-auto lg:overflow-visible no-scrollbar shrink-0">
+            {/* Sidebar / Topbar Navigation Column */}
+            <nav className="lg:col-span-3 grid grid-cols-2 lg:flex lg:flex-col gap-2 bg-white p-2.5 rounded-3xl border border-slate-100 shadow-sm shrink-0">
               <button
                 onClick={() => setActiveTab("itinerary")}
-                className={`w-full px-4 py-3.5 rounded-2xl text-xs font-bold text-left flex items-center gap-3 shrink-0 lg:shrink-1 transition-all duration-150 ${
+                className={`px-3 py-3 rounded-2xl text-xs font-bold text-left flex items-center gap-2.5 transition-all duration-150 ${
                   activeTab === "itinerary"
-                    ? "bg-rose-50 text-rose-700 border-l-4 border-rose-600"
+                    ? "bg-rose-50 text-rose-700 lg:border-l-4 lg:border-rose-600"
                     : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
-                <Calendar className={`w-4 h-4 ${activeTab === "itinerary" ? "text-rose-600" : "text-slate-400"}`} />
-                <span className="whitespace-nowrap">Daily Travel Itinerary</span>
+                <Calendar className={`w-4 h-4 shrink-0 ${activeTab === "itinerary" ? "text-rose-600" : "text-slate-400"}`} />
+                <span className="truncate">Daily Itinerary</span>
               </button>
 
               <button
                 onClick={() => setActiveTab("flights")}
-                className={`w-full px-4 py-3.5 rounded-2xl text-xs font-bold text-left flex items-center gap-3 shrink-0 lg:shrink-1 transition-all duration-150 ${
+                className={`px-3 py-3 rounded-2xl text-xs font-bold text-left flex items-center gap-2.5 transition-all duration-150 ${
                   activeTab === "flights"
-                    ? "bg-rose-50 text-rose-700 border-l-4 border-rose-600"
+                    ? "bg-rose-50 text-rose-700 lg:border-l-4 lg:border-rose-600"
                     : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
-                <Plane className={`w-4 h-4 ${activeTab === "flights" ? "text-rose-600" : "text-slate-400"}`} />
-                <span className="whitespace-nowrap">Flight Terminals</span>
+                <Plane className={`w-4 h-4 shrink-0 ${activeTab === "flights" ? "text-rose-600" : "text-slate-400"}`} />
+                <span className="truncate">Flight Terminals</span>
               </button>
 
               <button
                 onClick={() => setActiveTab("map")}
-                className={`w-full px-4 py-3.5 rounded-2xl text-xs font-bold text-left flex items-center gap-3 shrink-0 lg:shrink-1 transition-all duration-150 ${
+                className={`px-3 py-3 rounded-2xl text-xs font-bold text-left flex items-center gap-2.5 transition-all duration-150 ${
                   activeTab === "map"
-                    ? "bg-rose-50 text-rose-700 border-l-4 border-rose-600"
+                    ? "bg-rose-50 text-rose-700 lg:border-l-4 lg:border-rose-600"
                     : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
-                <Map className={`w-4 h-4 ${activeTab === "map" ? "text-rose-600" : "text-slate-400"}`} />
-                <span className="whitespace-nowrap">MTR Itinerary Map</span>
+                <Map className={`w-4 h-4 shrink-0 ${activeTab === "map" ? "text-rose-600" : "text-slate-400"}`} />
+                <span className="truncate">MTR Itinerary Map</span>
               </button>
 
               <button
                 onClick={() => setActiveTab("banking")}
-                className={`w-full px-4 py-3.5 rounded-2xl text-xs font-bold text-left flex items-center gap-3 shrink-0 lg:shrink-1 transition-all duration-150 ${
+                className={`px-3 py-3 rounded-2xl text-xs font-bold text-left flex items-center gap-2.5 transition-all duration-150 ${
                   activeTab === "banking"
-                    ? "bg-rose-50 text-rose-700 border-l-4 border-rose-600"
+                    ? "bg-rose-50 text-rose-700 lg:border-l-4 lg:border-rose-600"
                     : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
-                <Landmark className={`w-4 h-4 ${activeTab === "banking" ? "text-rose-600" : "text-slate-400"}`} />
-                <span className="whitespace-nowrap">ATMs & Banking</span>
+                <Landmark className={`w-4 h-4 shrink-0 ${activeTab === "banking" ? "text-rose-600" : "text-slate-400"}`} />
+                <span className="truncate">ATMs & Banking</span>
               </button>
 
               <button
-                onClick={() => setActiveTab("printView")}
-                className={`w-full px-4 py-3.5 rounded-2xl text-xs font-bold text-left flex items-center gap-3 shrink-0 lg:shrink-1 transition-all duration-150 ${
-                  activeTab === "printView"
-                    ? "bg-rose-50 text-rose-700 border-l-4 border-rose-600"
+                onClick={() => setActiveTab("pdf")}
+                className={`col-span-2 lg:col-span-1 px-3 py-3 rounded-2xl text-xs font-bold text-left flex items-center gap-2.5 transition-all duration-150 ${
+                  activeTab === "pdf"
+                    ? "bg-rose-50 text-rose-700 lg:border-l-4 lg:border-rose-600"
                     : "text-slate-600 hover:bg-slate-50"
                 }`}
               >
-                <FileText className={`w-4 h-4 ${activeTab === "printView" ? "text-rose-600" : "text-slate-400"}`} />
-                <span className="whitespace-nowrap">Printable View Deck</span>
+                <FileText className={`w-4 h-4 shrink-0 ${activeTab === "pdf" ? "text-rose-600" : "text-slate-400"}`} />
+                <span className="truncate">PDF</span>
               </button>
             </nav>
 
@@ -277,16 +277,16 @@ export default function App() {
               {activeTab === "flights" && <FlightView />}
               {activeTab === "map" && <MtrMap />}
               {activeTab === "banking" && <BankingView />}
-              {activeTab === "printView" && (
+              {activeTab === "pdf" && (
                 <div className="space-y-6">
                   <div className="border-b border-slate-200 pb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div>
                       <h2 className="text-2xl font-bold text-slate-800 tracking-tight flex items-center gap-2">
                         <FileText className="w-6 h-6 text-pink-600" />
-                        Printable Travel Document Preview
+                        PDF Travel Document
                       </h2>
                       <p className="text-slate-500 text-sm mt-1">
-                        Review the exact formatted pages ready for your print out or PDF storage.
+                        Download or print this travel guide directly to your phone or computer.
                       </p>
                     </div>
                     <button
@@ -294,7 +294,7 @@ export default function App() {
                       className="bg-rose-600 text-white hover:bg-rose-700 px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 shadow"
                     >
                       <Printer className="w-4 h-4" />
-                      Print Now
+                      Print / Save PDF
                     </button>
                   </div>
 
@@ -354,9 +354,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
           <p className="text-xs font-bold text-slate-300">
             Lexi's Travel Guidebook Applet
-          </p>
-          <p className="text-[11px] text-slate-500">
-            All transportation details, routes, and ATM details have been verified and revised based on real-world local services in Hong Kong & Macau.
           </p>
         </div>
       </footer>
