@@ -18,7 +18,7 @@ import ItineraryView from "./components/ItineraryView";
 import FlightView from "./components/FlightView";
 import MtrMap from "./components/MtrMap";
 import BankingView from "./components/BankingView";
-import { itinerary, flights, bankingInfo } from "./data/travelData";
+import { itinerary, flights, bankingInfo, lexiBirthdayImg } from "./data/travelData";
 
 type TabType = "itinerary" | "flights" | "map" | "banking" | "pdf";
 
@@ -152,22 +152,33 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               
-              {/* Title Brand */}
-              <div className="space-y-1 md:space-y-2">
-                <div className="inline-flex items-center gap-1.5 bg-rose-500/20 border border-rose-500/30 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-rose-300">
-                  <Sparkles className="w-3.5 h-3.5 text-rose-400 animate-spin-slow" />
-                  24th Birthday
+              {/* Title Brand with Lexi Avatar */}
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div className="relative shrink-0 mt-1">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-rose-400 to-pink-500 rounded-full animate-pulse blur-[1px]" />
+                  <img
+                    src={lexiBirthdayImg}
+                    alt="Lexi"
+                    referrerPolicy="no-referrer"
+                    className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-white relative z-10 shadow-lg shadow-black/30"
+                  />
                 </div>
-                <h1 id="main-title" className="text-3xl md:text-5xl font-black tracking-tight text-white leading-none">
-                  Lexi's Itinerary
-                </h1>
-                <p className="text-rose-100/85 text-xs md:text-sm font-medium flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                  <span>Hong Kong & Macau</span>
-                  <span className="text-rose-400/80 font-black">&bull;</span>
-                  <span>July 9–13, 2026</span>
-                  <span className="text-rose-400/80 font-black">&bull;</span>
-                  <span className="bg-rose-500/30 px-2 py-0.5 rounded font-mono text-xs">Hotel Base: Rambler Oasis</span>
-                </p>
+                <div className="space-y-1 md:space-y-2 text-center sm:text-left">
+                  <div className="inline-flex items-center gap-1.5 bg-rose-500/20 border border-rose-500/30 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-rose-300">
+                    <Sparkles className="w-3.5 h-3.5 text-rose-400 animate-spin-slow" />
+                    24th Birthday
+                  </div>
+                  <h1 id="main-title" className="text-3xl md:text-5xl font-black tracking-tight text-white leading-none">
+                    Lexi's Itinerary
+                  </h1>
+                  <p className="text-rose-100/85 text-xs md:text-sm font-medium flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1.5">
+                    <span>Hong Kong & Macau</span>
+                    <span className="text-rose-400/80 font-black">&bull;</span>
+                    <span>July 9–13, 2026</span>
+                    <span className="text-rose-400/80 font-black">&bull;</span>
+                    <span className="bg-rose-500/30 px-2 py-0.5 rounded font-mono text-xs">Hotel Base: Rambler Oasis</span>
+                  </p>
+                </div>
               </div>
 
               {/* Action Cards */}

@@ -103,6 +103,7 @@ export default function ItineraryView() {
               <img
                 src={item.image}
                 alt={item.place}
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover absolute inset-0 transform hover:scale-105 transition-transform duration-300"
                 onError={(e) => {
                   // Fallback if image fails to render

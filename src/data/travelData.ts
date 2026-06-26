@@ -1,3 +1,15 @@
+import aquaLunaImg from "../assets/images/aqua_luna_1782483212316.jpg";
+import bigBuddhaImg from "../assets/images/big_buddha_1782483227710.jpg";
+import hkgDisneylandImg from "../assets/images/hkg_disneyland_1782483149053.jpg";
+import lexiBirthdayImg from "../assets/images/lexi_birthday_clean_thumbnail_1782492889936.jpg";
+import ramblerHotelImg from "../assets/images/rambler_hotel_1782483246933.jpg";
+import ruinsStPaulImg from "../assets/images/ruins_st_paul_1782483163214.jpg";
+import sky100ViewImg from "../assets/images/sky100_view_1782483190555.jpg";
+import venetianMacauImg from "../assets/images/venetian_macau_1782483260021.jpg";
+import victoriaPeakImg from "../assets/images/victoria_peak_1782483176438.jpg";
+
+export { lexiBirthdayImg };
+
 export interface Flight {
   route: string;
   date: string;
@@ -78,7 +90,7 @@ export const itinerary: ItineraryDay[] = [
         place: "Hong Kong International Airport (Arrival)",
         description: "Land in Hong Kong. Retrieve baggage and clear immigration.",
         distance: "—",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg", // default or generic
+        image: ramblerHotelImg,
       },
       {
         id: "d1-2",
@@ -94,7 +106,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "45 minutes",
         fare: "HK$19.80 (Adult Single Journey Fare)",
         distance: "~45 min ride",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       },
       {
         id: "d1-3",
@@ -103,7 +115,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Arrival at hotel, drop off luggage and take a quick rest. Have a casual lunch nearby.",
         isFreeTime: true,
         distance: "—",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       },
       {
         id: "d1-4",
@@ -111,7 +123,7 @@ export const itinerary: ItineraryDay[] = [
         place: "Rambler Oasis Hotel Check-in",
         description: "Official hotel check-in. Settle into the room and freshen up.",
         distance: "—",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       },
       {
         id: "d1-5",
@@ -128,7 +140,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "30 minutes",
         fare: "HK$17.50 (HK$3.40 Minibus + HK$14.10 MTR Adult Octopus Fare)",
         distance: "~30 min ride",
-        image: "/src/assets/images/aqua_luna_1782483212316.jpg"
+        image: aquaLunaImg,
       },
       {
         id: "d1-6",
@@ -141,7 +153,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "8 minutes",
         fare: "Free",
         distance: "~8 min walk",
-        image: "/src/assets/images/aqua_luna_1782483212316.jpg"
+        image: aquaLunaImg,
       },
       {
         id: "d1-7",
@@ -154,7 +166,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "2 minutes",
         fare: "Free",
         distance: "~2 min walk",
-        image: "/src/assets/images/aqua_luna_1782483212316.jpg"
+        image: aquaLunaImg,
       },
       {
         id: "d1-8",
@@ -168,7 +180,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "45 minutes",
         fare: "HK$260.00 (Adult Night Cruise Ticket)",
         distance: "45 min cruise",
-        image: "/src/assets/images/aqua_luna_1782483212316.jpg"
+        image: aquaLunaImg,
       },
       {
         id: "d1-9",
@@ -184,7 +196,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "30 minutes",
         fare: "HK$17.50 (HK$14.10 MTR + HK$3.40 Minibus Adult Octopus Fare)",
         distance: "~30 min ride",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       }
     ]
   },
@@ -208,7 +220,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "20 minutes",
         fare: "HK$19.40 (HK$3.40 Minibus + HK$16.00 MTR Adult Octopus Fare)",
         distance: "~20 min ride",
-        image: "/src/assets/images/hkg_disneyland_1782483149053.jpg"
+        image: hkgDisneylandImg,
       },
       {
         id: "d2-2",
@@ -222,7 +234,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "5 minutes",
         fare: "Included in MTR ticket",
         distance: "~5 min ride",
-        image: "/src/assets/images/hkg_disneyland_1782483149053.jpg"
+        image: hkgDisneylandImg,
       },
       {
         id: "d2-3",
@@ -230,7 +242,7 @@ export const itinerary: ItineraryDay[] = [
         place: "Hong Kong Disneyland Entrance",
         description: "Park opens! Enter the park and immediately head to the recommended zones.",
         distance: "—",
-        image: "/src/assets/images/hkg_disneyland_1782483149053.jpg"
+        image: hkgDisneylandImg,
       },
       {
         id: "d2-4",
@@ -239,7 +251,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Rest, grab lunch at the Royal Banquet Hall or Comet Cafe.",
         isFreeTime: true,
         distance: "—",
-        image: "/src/assets/images/hkg_disneyland_1782483149053.jpg"
+        image: hkgDisneylandImg,
       },
       {
         id: "d2-5",
@@ -247,7 +259,7 @@ export const itinerary: ItineraryDay[] = [
         place: "Main Street, USA (Parade)",
         description: "Watch the spectacular Friendtastic! Parade (arrive 15 min early for a good viewing spot).",
         distance: "—",
-        image: "/src/assets/images/hkg_disneyland_1782483149053.jpg"
+        image: hkgDisneylandImg,
       },
       {
         id: "d2-6",
@@ -256,7 +268,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Quick dinner or snack ahead of the evening castle lightshow.",
         isFreeTime: true,
         distance: "—",
-        image: "/src/assets/images/hkg_disneyland_1782483149053.jpg"
+        image: hkgDisneylandImg,
       },
       {
         id: "d2-7",
@@ -264,7 +276,7 @@ export const itinerary: ItineraryDay[] = [
         place: "Main Street, USA (Momentous Show)",
         description: "Watch the incredible 'Momentous' Nighttime Spectacular light, fountain, and fireworks show (arrive 30-45 min early near the castle).",
         distance: "—",
-        image: "/src/assets/images/hkg_disneyland_1782483149053.jpg"
+        image: hkgDisneylandImg,
       },
       {
         id: "d2-8",
@@ -280,7 +292,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "25 minutes",
         fare: "HK$19.40 (HK$16.00 MTR + HK$3.40 Minibus Adult Octopus Fare)",
         distance: "~25 min ride",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       }
     ]
   },
@@ -307,7 +319,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "35 minutes",
         fare: "HK$20.20 (HK$3.40 Minibus + HK$16.80 MTR Adult Octopus Fare)",
         distance: "~35 min ride",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-2",
@@ -321,7 +333,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "55 minutes",
         fare: "HK$175.00 (Economy Class Ticket)",
         distance: "~55 min ride",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-3",
@@ -336,7 +348,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "10 minutes",
         fare: "Free (Shuttle Bus)",
         distance: "~10 min ride",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-4",
@@ -349,7 +361,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "10 minutes",
         fare: "Free",
         distance: "~10 min walk",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-5",
@@ -358,7 +370,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Try Macau delicacies: legendary pork chop buns, Portuguese egg tarts (Lord Stow's or Margaret's), and almond cakes.",
         isFreeTime: true,
         distance: "—",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-6",
@@ -371,7 +383,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "10 minutes",
         fare: "Free",
         distance: "~10 min walk",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-7",
@@ -384,7 +396,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "5 minutes",
         fare: "Free",
         distance: "~5 min walk",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-8",
@@ -398,7 +410,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "20 minutes",
         fare: "Free (or MOP$6.00 on Public Bus)",
         distance: "~20 min ride",
-        image: "/src/assets/images/venetian_macau_1782483260021.jpg"
+        image: venetianMacauImg,
       },
       {
         id: "d3-9",
@@ -407,7 +419,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Wander the canals with gondola rides, replicas of Venetian bridges, extensive shopping mall, and spectacular casino atrium.",
         isFreeTime: true,
         distance: "—",
-        image: "/src/assets/images/venetian_macau_1782483260021.jpg"
+        image: venetianMacauImg,
       },
       {
         id: "d3-10",
@@ -421,7 +433,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "20 minutes",
         fare: "Free (Shuttle Bus)",
         distance: "~20 min ride",
-        image: "/src/assets/images/venetian_macau_1782483260021.jpg"
+        image: venetianMacauImg,
       },
       {
         id: "d3-11",
@@ -435,7 +447,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "55 minutes",
         fare: "HK$190.00 (Weekend Evening Fare)",
         distance: "~55 min ride",
-        image: "/src/assets/images/ruins_st_paul_1782483163214.jpg"
+        image: ruinsStPaulImg,
       },
       {
         id: "d3-12",
@@ -452,7 +464,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "35 minutes",
         fare: "HK$20.20 (HK$16.80 MTR + HK$3.40 Minibus Adult Octopus Fare)",
         distance: "~35 min ride",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       }
     ]
   },
@@ -476,7 +488,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "20 minutes",
         fare: "HK$18.50 (HK$3.40 Minibus + HK$15.10 MTR Adult Octopus Fare)",
         distance: "~20 min ride",
-        image: "/src/assets/images/big_buddha_1782483227710.jpg"
+        image: bigBuddhaImg,
       },
       {
         id: "d4-2",
@@ -490,7 +502,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "25 minutes",
         fare: "HK$235.00 (Adult Single Crystal Cabin Ticket)",
         distance: "~25 min ride",
-        image: "/src/assets/images/big_buddha_1782483227710.jpg"
+        image: bigBuddhaImg,
       },
       {
         id: "d4-3",
@@ -503,7 +515,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "—",
         fare: "Free (Museum inside Buddha pedestal is HK$45, includes lunch voucher)",
         distance: "—",
-        image: "/src/assets/images/big_buddha_1782483227710.jpg"
+        image: bigBuddhaImg,
       },
       {
         id: "d4-4",
@@ -512,7 +524,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Grab a vegetarian meal at the monastery or a meal in the Ngong Ping theme village.",
         isFreeTime: true,
         distance: "—",
-        image: "/src/assets/images/big_buddha_1782483227710.jpg"
+        image: bigBuddhaImg,
       },
       {
         id: "d4-5",
@@ -525,7 +537,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "25 minutes",
         fare: "HK$160.00 (Single Ticket or included in round-trip prebook)",
         distance: "~25 min ride",
-        image: "/src/assets/images/big_buddha_1782483227710.jpg"
+        image: bigBuddhaImg,
       },
       {
         id: "d4-6",
@@ -540,7 +552,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "35 minutes",
         fare: "HK$23.60 (Adult Octopus Fare)",
         distance: "~35 min ride",
-        image: "/src/assets/images/victoria_peak_1782483176438.jpg"
+        image: victoriaPeakImg,
       },
       {
         id: "d4-7",
@@ -549,7 +561,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Explore the mid-levels escalators, historic PMQ, boutique coffee shops, and graffiti walls in SoHo.",
         isFreeTime: true,
         distance: "—",
-        image: "/src/assets/images/victoria_peak_1782483176438.jpg"
+        image: victoriaPeakImg,
       },
       {
         id: "d4-8",
@@ -563,7 +575,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "20 minutes",
         fare: "HK$5.10 (Adult Octopus Fare)",
         distance: "~20 min ride",
-        image: "/src/assets/images/victoria_peak_1782483176438.jpg"
+        image: victoriaPeakImg,
       },
       {
         id: "d4-9",
@@ -577,7 +589,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "10 minutes",
         fare: "HK$88.00 (Peak Tram + Sky Pass Single Combo)",
         distance: "~10 min ride",
-        image: "/src/assets/images/victoria_peak_1782483176438.jpg"
+        image: victoriaPeakImg,
       },
       {
         id: "d4-10",
@@ -591,7 +603,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "20 minutes",
         fare: "HK$53.00 (Peak Tram Downward Single)",
         distance: "~20 min ride",
-        image: "/src/assets/images/victoria_peak_1782483176438.jpg"
+        image: victoriaPeakImg,
       },
       {
         id: "d4-11",
@@ -605,7 +617,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "15 minutes",
         fare: "HK$11.50 (Adult Octopus Fare)",
         distance: "~15 min ride",
-        image: "/src/assets/images/sky100_view_1782483190555.jpg"
+        image: sky100ViewImg,
       },
       {
         id: "d4-12",
@@ -619,7 +631,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "—",
         fare: "HK$198.00 (Standard Admission Ticket)",
         distance: "—",
-        image: "/src/assets/images/sky100_view_1782483190555.jpg"
+        image: sky100ViewImg,
       },
       {
         id: "d4-13",
@@ -634,7 +646,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "15 minutes",
         fare: "HK$14.90 (HK$11.50 MTR + HK$3.40 Minibus Adult Octopus Fare)",
         distance: "~15 min ride",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       }
     ]
   },
@@ -651,7 +663,7 @@ export const itinerary: ItineraryDay[] = [
         place: "Rambler Oasis Hotel Check-out",
         description: "Complete checkout procedures and carry baggage.",
         distance: "—",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       },
       {
         id: "d5-2",
@@ -666,7 +678,7 @@ export const itinerary: ItineraryDay[] = [
         travelTime: "45 minutes",
         fare: "HK$19.80 (Adult Cash/Octopus Fare)",
         distance: "~45 min ride",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       },
       {
         id: "d5-3",
@@ -674,7 +686,7 @@ export const itinerary: ItineraryDay[] = [
         place: "Hong Kong International Airport, Terminal 1 (Departure)",
         description: "Board Flight 5J 111 back to Manila Ninoy Aquino International Airport Terminal 3.",
         distance: "—",
-        image: "/src/assets/images/rambler_hotel_1782483246933.jpg"
+        image: ramblerHotelImg,
       }
     ]
   }
