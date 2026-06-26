@@ -70,7 +70,7 @@ export const itinerary: ItineraryDay[] = [
     date: "July 9 (Thu)",
     title: "Arrival Day",
     summary: "Land at HKG 9:45 AM ➔ Check-in to Rambler Oasis ➔ Tsim Sha Tsui Waterfront ➔ Evening Harbour Cruise.",
-    recommendedLeaveTime: "04:15 PM",
+    recommendedLeaveTime: "03:00 PM",
     items: [
       {
         id: "d1-1",
@@ -115,10 +115,10 @@ export const itinerary: ItineraryDay[] = [
       },
       {
         id: "d1-5",
-        time: "04:30 PM",
+        time: "03:15 PM",
         place: "Tsing Yi Station to Tsim Sha Tsui",
         description: "Travel from hotel to the Tsim Sha Tsui waterfront.",
-        recommendedLeaveTime: "04:15 PM",
+        recommendedLeaveTime: "03:00 PM",
         steps: [
           "Board Green Minibus 88F from the Rambler Oasis Hotel driveway.",
           "Alight at Tsing Yi MTR Station (Exit A).",
@@ -133,7 +133,7 @@ export const itinerary: ItineraryDay[] = [
       },
       {
         id: "d1-6",
-        time: "05:30 PM",
+        time: "04:00 PM",
         place: "Hong Kong Cultural Centre",
         description: "Iconic architectural landmark. Take photographs at the seaside promenade with views of the Victoria Harbour skyline.",
         steps: [
