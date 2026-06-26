@@ -243,7 +243,7 @@ export default function App() {
                 }`}
               >
                 <Map className={`w-4 h-4 shrink-0 ${activeTab === "map" ? "text-rose-600" : "text-slate-400"}`} />
-                <span className="truncate">MTR Itinerary Map</span>
+                <span className="truncate">Map</span>
               </button>
 
               <button

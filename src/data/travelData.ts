@@ -122,9 +122,8 @@ export const itinerary: ItineraryDay[] = [
         steps: [
           "Board Green Minibus 88F from the Rambler Oasis Hotel driveway.",
           "Alight at Tsing Yi MTR Station (Exit A).",
-          "Enter Tsing Yi Station and take the Tung Chung Line (Orange) toward Hong Kong.",
-          "Transfer to the Tsuen Wan Line (Red) toward Central at Lai King Station.",
-          "Exit at Tsim Sha Tsui Station using Exit E."
+          "Enter Tsing Yi Station and board the Tung Chung Line (Orange) toward Hong Kong, then alight at Lai King Station to transfer.",
+          "At Lai King Station, board the Tsuen Wan Line (Red) toward Central, and alight at Tsim Sha Tsui Station (Exit E)."
         ],
         travelTime: "30 minutes",
         fare: "HK$17.50 (HK$3.40 Minibus + HK$14.10 MTR Adult Octopus Fare)",
@@ -178,9 +177,8 @@ export const itinerary: ItineraryDay[] = [
         description: "Return journey to the hotel after dinner on the waterfront.",
         steps: [
           "Walk to Tsim Sha Tsui MTR Station.",
-          "Take the Tsuen Wan Line (Red) toward Tsuen Wan.",
-          "Transfer to the Tung Chung Line (Orange) toward Tung Chung at Lai King Station.",
-          "Exit at Tsing Yi Station using Exit A.",
+          "Board the Tsuen Wan Line (Red) toward Tsuen Wan, then alight at Lai King Station to transfer.",
+          "At Lai King Station, board the Tung Chung Line (Orange) toward Tung Chung, and alight at Tsing Yi Station (Exit A).",
           "Board Green Minibus 88F back to Rambler Oasis Hotel."
         ],
         travelTime: "30 minutes",
@@ -205,8 +203,7 @@ export const itinerary: ItineraryDay[] = [
         recommendedLeaveTime: "08:40 AM",
         steps: [
           "Take Green Minibus 88F from hotel to Tsing Yi Station.",
-          "Board the MTR Tung Chung Line (Orange) toward Tung Chung.",
-          "Alight at Sunny Bay Station."
+          "Board the MTR Tung Chung Line (Orange) toward Tung Chung, and alight at Sunny Bay Station."
         ],
         travelTime: "20 minutes",
         fare: "HK$19.40 (HK$3.40 Minibus + HK$16.00 MTR Adult Octopus Fare)",
@@ -220,8 +217,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Transfer to the iconic magical themed train line.",
         steps: [
           "Cross the platform at Sunny Bay Station.",
-          "Board the MTR Disneyland Resort Line (Pink).",
-          "Alight at Disneyland Resort Station."
+          "Board the MTR Disneyland Resort Line (Pink), and alight at Disneyland Resort Station."
         ],
         travelTime: "5 minutes",
         fare: "Included in MTR ticket",
@@ -277,9 +273,8 @@ export const itinerary: ItineraryDay[] = [
         description: "Return journey after park closure.",
         steps: [
           "Walk to Disneyland Resort Station.",
-          "Board the MTR Disneyland Resort Line (Pink) to Sunny Bay Station.",
-          "Transfer to the Tung Chung Line (Orange) toward Hong Kong.",
-          "Alight at Tsing Yi Station (Exit A).",
+          "Board the MTR Disneyland Resort Line (Pink), and alight at Sunny Bay Station.",
+          "At Sunny Bay Station, transfer to the Tung Chung Line (Orange) toward Hong Kong, and alight at Tsing Yi Station (Exit A).",
           "Board Green Minibus 88F back to Rambler Oasis Hotel."
         ],
         travelTime: "25 minutes",
@@ -304,10 +299,10 @@ export const itinerary: ItineraryDay[] = [
         recommendedLeaveTime: "09:15 AM",
         steps: [
           "Take Green Minibus 88F from hotel to Tsing Yi Station.",
-          "Take MTR Tung Chung Line (Orange) toward Hong Kong.",
-          "Exit at Hong Kong Station and walk via the indoor connection walkway to Central Station.",
-          "Transfer to Island Line (Blue) toward Chai Wan.",
-          "Alight at Sheung Wan Station (Exit D) and head up to 3F Hong Kong-Macau Ferry Terminal."
+          "Enter Tsing Yi Station and board the MTR Tung Chung Line (Orange) toward Hong Kong, then alight at Hong Kong Station.",
+          "From Hong Kong Station, walk via the indoor connection walkway to Central Station.",
+          "At Central Station, board the Island Line (Blue) toward Chai Wan, and alight at Sheung Wan Station (Exit D).",
+          "Head up to the 3F Hong Kong-Macau Ferry Terminal."
         ],
         travelTime: "35 minutes",
         fare: "HK$20.20 (HK$3.40 Minibus + HK$16.80 MTR Adult Octopus Fare)",
@@ -449,9 +444,9 @@ export const itinerary: ItineraryDay[] = [
         description: "MTR journey back to the hotel.",
         steps: [
           "Walk to Sheung Wan MTR Station.",
-          "Take the Island Line (Blue) toward Chai Wan.",
-          "Transfer to Tung Chung Line (Orange) at Central/Hong Kong Station.",
-          "Alight at Tsing Yi Station (Exit A).",
+          "Board the Island Line (Blue) toward Chai Wan, then alight at Central Station.",
+          "Walk via the indoor pedestrian corridor to Hong Kong Station.",
+          "At Hong Kong Station, board the Tung Chung Line (Orange) toward Tung Chung, and alight at Tsing Yi Station (Exit A).",
           "Board Green Minibus 88F back to Rambler Oasis Hotel."
         ],
         travelTime: "35 minutes",
@@ -476,8 +471,7 @@ export const itinerary: ItineraryDay[] = [
         recommendedLeaveTime: "08:10 AM",
         steps: [
           "Board Green Minibus 88F from hotel to Tsing Yi MTR Station.",
-          "Board MTR Tung Chung Line (Orange) toward Tung Chung.",
-          "Alight at Tung Chung Station (Exit B)."
+          "Board the MTR Tung Chung Line (Orange) toward Tung Chung, and alight at Tung Chung Station (Exit B)."
         ],
         travelTime: "20 minutes",
         fare: "HK$18.50 (HK$3.40 Minibus + HK$15.10 MTR Adult Octopus Fare)",
@@ -540,8 +534,8 @@ export const itinerary: ItineraryDay[] = [
         description: "Transit from Lantau Island directly to Hong Kong Island's Central district.",
         steps: [
           "Enter Tung Chung MTR Station.",
-          "Board MTR Tung Chung Line (Orange) toward Hong Kong.",
-          "Alight at Hong Kong Station. Walk to Central area via indoor walkway/escalators."
+          "Board the MTR Tung Chung Line (Orange) toward Hong Kong, and alight at Hong Kong Station.",
+          "From Hong Kong Station, walk to the Central area via the indoor walkway/escalators."
         ],
         travelTime: "35 minutes",
         fare: "HK$23.60 (Adult Octopus Fare)",
@@ -605,9 +599,8 @@ export const itinerary: ItineraryDay[] = [
         place: "Central Station ➔ Kowloon Station",
         description: "Cross the harbour to the International Commerce Centre (ICC) in Kowloon.",
         steps: [
-          "Walk from Central MTR Station to Hong Kong MTR Station via pedestrian corridor.",
-          "Board MTR Tung Chung Line (Orange) toward Tung Chung.",
-          "Alight at Kowloon Station (Exit C)."
+          "Walk from Central MTR Station to Hong Kong MTR Station via the indoor pedestrian corridor.",
+          "Board the MTR Tung Chung Line (Orange) toward Tung Chung, and alight at Kowloon Station (Exit C)."
         ],
         travelTime: "15 minutes",
         fare: "HK$11.50 (Adult Octopus Fare)",
@@ -635,8 +628,7 @@ export const itinerary: ItineraryDay[] = [
         description: "Return back to the hotel.",
         steps: [
           "Enter Kowloon MTR Station.",
-          "Board MTR Tung Chung Line (Orange) toward Tung Chung.",
-          "Alight at Tsing Yi Station (Exit A).",
+          "Board the MTR Tung Chung Line (Orange) toward Tung Chung, and alight at Tsing Yi Station (Exit A).",
           "Board Green Minibus 88F back to Rambler Oasis Hotel."
         ],
         travelTime: "15 minutes",
